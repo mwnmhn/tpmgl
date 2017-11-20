@@ -11,7 +11,7 @@ public class Converter {
      * @return integer
      */
     public int toNumerical(String roman) {
-        for (int i : NUMBER_LETTERS) { // Loop through all the letters
+        for (int i : NUMBER_LETTERSk) { // Loop through all the letters
             if(roman.startsWith(NUMBER_LETTERS[i])) // Check if the string starts with that letter
                 return NUMBER_VALUES[i] + toNumerical(roman.replaceFirst(NUMBER_LETTERS[i], "")); // Rinse and repeats until the string is empty and return it
         }
